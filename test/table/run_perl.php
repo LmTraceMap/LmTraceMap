@@ -16,7 +16,7 @@ function callpy($argv){
         $fp = fopen("/var/www/html/hua_map/test/file/".$argv[1]."/mail.txt","r");
         $mail=fgets($fp);
         $country=fgets($fp);
-        exec("echo  '稍後請到以下網址觀看結果:\nhttp://120.126.17.192/hua_map/test/table/map_pickable.php?filename=".$argv[1]."&country=".$country."'| mail -s 'LmTraceMap' $mail");
+        exec("echo  'Please go to the following URL to view the results:\nhttp://120.126.17.192/hua_map/test/table/map_pickable.php?filename=".$argv[1]."&country=".$country."'| mail -s 'LmTraceMap' $mail");
         fclose($fp);
        # $done = fopen(' /var/www/html/hua_map/upload/file/'.$argv[1].'/done.txt',"w");
        # fclose($done);
