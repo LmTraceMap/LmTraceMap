@@ -1,0 +1,51 @@
+﻿排名,菌的名稱,距離,BioSample,geographic_location,isolation_source
+1,SRR1153450,0,SAMN02597580,USA,blood
+2,SRR1193827,1,SAMN02689016,USA,blood
+3,SRR1451255,1,SAMN02847816,USA,blood
+4,SRR1562128,1,SAMN03013681,USA,blood
+5,SRR1657596,2,SAMN03165790,USA,blood
+6,SRR1745483,2,SAMN03275495,USA,blood
+7,SRR5764983,13,SAMN05410809,Canada: Alberta,food
+8,SRR5764849,14,SAMN05410820,Canada: Alberta,food
+9,SRR5764940,14,SAMN05410789,Canada: Alberta,food
+10,SRR5764943,14,SAMN05410788,Canada: Alberta,food
+11,SRR5764960,14,SAMN05410753,Canada: Alberta,food
+12,SRR5764968,14,SAMN05410801,Canada: Alberta,food
+13,SRR3114198,15,SAMN04331191,Canada:Quebec,Saint-Hyacinthe,Solid - Food; Food; Ready-to-eat Meat and Poultry; Heat processed - Cooked chicken; Cooked
+14,SRR5167786,15,SAMN04277002,Canada,blood
+15,SRR5764851,15,SAMN05410795,Canada: Alberta,food
+16,SRR5764881,15,SAMN05410777,Canada: Alberta,food
+17,SRR5764899,15,SAMN05410839,Canada: Alberta,food
+18,SRR5764906,15,SAMN05410781,Canada: Alberta,food
+19,SRR5764967,15,SAMN05410750,Canada: Alberta,food
+20,SRR5764986,15,SAMN05410794,Canada: Alberta,food
+21,ERR1817091,16,SAMEA72803668,New Zealand,Food - coleslaw
+22,SRR1640166,16,SAMN03160826,,food
+23,SRR3114225,16,SAMN04331175,Canada:Nova Scotia,Dartmouth,Environmental, Swab or Sampling; swab - inanimate object surface; building - food processing factory
+24,SRR4048732,16,SAMN02867555,Canada: Calgary, AB,Food Processing Facility
+25,SRR5764868,16,SAMN05410655,Canada: British Columbia,food
+26,SRR5764987,16,SAMN05410837,Canada: Alberta,food
+27,SRR1598806,17,SAMN03072625,USA:MA,sliced red pastrami
+28,SRR1685978,17,SAMN03225483,Canada,food
+29,SRR3114195,17,SAMN04331170,Canada:Nova Scotia,Dartmouth,Ready-to-eat Meat and Poultry; Heat processed - Cooked beef; Cooked
+30,SRR1342176,18,SAMN02839425,Canada,blood
+31,SRR1373612,18,SAMN02849540,USA:WI,environmental: non-food-contact surface
+32,SRR3109048,18,SAMN04331261,Canada:Alberta,Edmonton,Fluid - Urine; Clinical; Human (Homo Sapiens)
+33,SRR2000564,19,SAMN02867583,Canada: Ontario,Beef Deli Slices
+34,SRR3112452,19,SAMN04331084,Canada:Alberta,Edmonton,Environmental, Swab or Sampling; building - abattoir or meat processing
+35,SRR3112469,19,SAMN04331071,Canada:Alberta,Edmonton,Environmental, Swab or Sampling; building - abattoir or meat processing
+36,SRR3114224,19,SAMN04331186,Canada:Quebec,Saint-Hyacinthe,Environmental, Swab or Sampling; swab - meat; building - food processing factory
+37,SRR3745084,19,SAMN05301555,Canada,
+38,SRR5643228,19,SAMN07190213,USA:FL,RTE Product
+39,SRR5764962,19,SAMN05410790,Canada: Alberta,food
+40,ERR1102283,20,SAMEA3639482,Australia,human
+41,ERR1102530,20,SAMEA3639729,Australia,food
+42,ERR1816982,20,SAMEA72828418,New Zealand,Factory
+43,ERR1816995,20,SAMEA72810418,New Zealand,Factory - External Area
+44,ERR2521990,20,SAMEA4586740,Netherlands,
+45,SRR1818042,20,SAMN03354319,United Kingdom,
+46,SRR3108934,20,SAMN04331218,Canada:Quebec,Saint-Hyacinthe,Environmental, Swab or Sampling; swab - food contact surface; building - abattoir or meat processing
+47,SRR3109041,20,SAMN04331254,Canada:Quebec,Saint-Hyacinthe,Solid - Food; Food; Ready-to-eat Meat and Poultry; Cured/smoked - Ham; Smoked
+48,SRR3112458,20,SAMN04331065,Canada:Alberta,Edmonton,Environmental, Swab or Sampling; building - abattoir or meat processing
+49,SRR3112461,20,SAMN04331075,Canada:Alberta,Edmonton,Environmental, Swab or Sampling; building - abattoir or meat processing
+50,SRR3112470,20,SAMN04331073,Canada:Alberta,Edmonton,Environmental, Swab or Sampling; building - abattoir or meat processing
