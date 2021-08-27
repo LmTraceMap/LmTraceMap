@@ -1,0 +1,9 @@
+.root-node, .node, .table-footer {
+  font-weight: bold;
+}
+
+.button-default{
+  display: none;
+
+}
+
