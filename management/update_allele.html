@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>updatedb</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style>
+        div .progressbar {
+            position: absolute;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 20px;
+            width: 50%;
+            display: block;
+        }
+
+        div .progressbar>span.progress {
+            position: absolute;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: #007bff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div style="margin: 1em;">
+        <form enctype="multipart/form-data" name="upload_form" action="./update_allele.html#" onsubmit="return false"
+            method="POST">
+            <div style="position:relative; display: block;">
+                <input type="file" accept=".txt" id="upload_file" name="upload_file">
+                
+            </div>
+            <div style="position:relative; display: block;margin-top: 20px;">
+                <div id="file_name" style="margin-top: 5px;">檔案名稱: </div>
+                <div id="file_size" style="margin-top: 5px;">檔案大小:</div>
+                <div class="progressbar" style="margin-top: 5px;">上傳進度:
+                    <span class="progress" style="position: absolute ;display: inline;"></span>
+                </div>
+            </div>
+            <div style="position:relative; display: block; margin-top: 50px;">
+                <input type="Submit" value="上傳" id="upload_img_button">
+                <input type="Reset" value="清除" id="cancel_img_button">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $('form').submit(function (e) {
+            var file;
+            var form_data = new FormData();
+            var up_progress = document.getElementById('progress');
+            var upload_name = document.getElementById('file_name');
+            var upload_size = document.getElementById('file_size');
+            form_data.append("upload_file", $("#upload_file")[0].files[0]);
+            $.ajax
+                ({
+                    url: './upload_allele.php',
+                    type: 'POST',
+                    data: form_data,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+
+                    xhr: function () {
+                        var i = 0;
+                        var myXhr = $.ajaxSettings.xhr();
+                        upload_name.innerHTML = "檔案名稱: " + $("#upload_file")[0].files[0].name;
+                        upload_size.innerHTML = "檔案大小: " + $("#upload_file")[0].files[0].size + " KB";
+                        if (myXhr.upload) {
+                            myXhr.upload.addEventListener('progress', function (evt) {
+                                console.log("progress 事件觸發");
+                                var progress_el = document.querySelector("span.progress");
+                                if (evt.lengthComputable) {
+                                    var loaded = (evt.loaded / evt.total);
+                                    if (loaded <= 1) {
+                                        //console.log(evt.loaded / evt.total)
+                                        var percent = loaded * 100;
+                                        console.log("進度: " + percent + "%");
+                                        //up_progress.innerHTML +=  percent + "%";
+                                        // 改變介面進度條的百分比
+                                        progress_el.setAttribute("style", "width: " + percent + "%;");
+                                    }
+                                }
+                            }, false);
+                        }
+                        return myXhr;
+                    },
+                    success: function (data) {
+                        var data_arr = data.split(',');
+                        test = data_arr[0] + data_arr[1];
+                        console.log(test); //存檔案名稱
+                        save_file = test;
+                        //alert("上傳成功!");
+                    },
+                    error: function () {
+                        //alert("上傳失敗!");
+                    },
+                });
+        })
+
+    </script>
+
+</body>
+
+</html>

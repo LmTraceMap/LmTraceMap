@@ -1,0 +1,5 @@
+指令:
+python3 insertInfo2db.py的路徑 SraBioSampleInfo_sel.txt的路徑
+	
+注意:
+SraBioSampleInfo_sel.txt要轉檔成txt檔，才可以執行此程式！
